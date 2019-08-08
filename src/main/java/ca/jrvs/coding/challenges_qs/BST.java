@@ -1,21 +1,16 @@
 package ca.jrvs.coding.challenges_qs;
-
+//Binary Search Tree
 public class BST {
-
     private Node root;
-
     public Node getRoot() {
         return root;
     }
-
     public boolean isEmpty() {
         return null == root;
     }
-
     public void clear(Node root) {
         root = null;
     }
-
     public int getSize(Node root) {
         if (root == null) {
             return 0;
@@ -33,7 +28,5 @@ public class BST {
             this.left = null;
             this.right = null;
         }
-
     }
-
 }
