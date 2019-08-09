@@ -16,12 +16,5 @@ public class MinMaxInArray {
             }
         }
         return String.format("%s %s", max, min);
-
-    }
-
-    public static void main(String[] args) {
-        System.out.println(minmax(new int[]{1, 2, 199, 22, 33, 3}));
     }
 }
-
-

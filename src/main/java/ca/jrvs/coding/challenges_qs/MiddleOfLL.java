@@ -1,12 +1,12 @@
 package ca.jrvs.coding.challenges_qs;
 
 /**
- * Given a non-empty, singly linked list with head node head, return a middle node of linked list.
+ * Given a non-empty, singly linked list with head node head,
+ * return a middle node of linked list.
  * If there are two middle nodes, return the second middle node.
  */
 
 public class MiddleOfLL extends LinkedList {
-
     public Node findMid(Node head) {
         Node tortoise = head;
         Node rabbit = head;
@@ -15,8 +15,6 @@ public class MiddleOfLL extends LinkedList {
             tortoise = tortoise.next;
             rabbit = rabbit.next.next;
         }
-
         return tortoise;
-
     }
 }

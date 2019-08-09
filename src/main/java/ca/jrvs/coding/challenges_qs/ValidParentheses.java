@@ -1,6 +1,7 @@
 package ca.jrvs.coding.challenges_qs;
 /**
- * Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+ * Given a string containing just the characters
+ * '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
  * An input string is valid if:
  * Open brackets must be closed by the same type of brackets.
  * Open brackets must be closed in the correct order.
@@ -22,7 +23,6 @@ public class ValidParentheses {
             if (ch == '(' || ch == '{' || ch == '[') {
                 stack.push(ch);
             } else if (ch == ')' || ch == '}' || ch == ']') {
-
                 char pop = stack.pop();
                 if (ch == ')' && pop != '(')
                     return false;
@@ -30,7 +30,6 @@ public class ValidParentheses {
                     return false;
                 else if (ch == ']' && pop != '[')
                     return false;
-
             }
         }
         return stack.isEmpty();

@@ -10,15 +10,12 @@ class Node {
         left = right = null;
     }
 }
-
 public class BstTraversal {
     Node root;
-
     //Constructor
     BstTraversal() {
         root = null;
     }
-
     public static void main(String[] args) {
         BstTraversal bst = new BstTraversal();
         bst.root = new Node(1);
@@ -36,48 +33,33 @@ public class BstTraversal {
         System.out.println("\nPostorder traversal:");
         bst.printPostorder();
     }
-
     void printPostorder(Node node) {
         if (node == null)
             return;
-
         printPostorder(node.left);
-
         printPostorder(node.right);
-
         System.out.print(node.data + " ");
     }
-
     void printInorder(Node node) {
         if (node == null)
             return;
-
         printInorder(node.left);
-
         System.out.print(node.data + " ");
-
         printInorder(node.right);
     }
-
     void printPreorder(Node node) {
         if (node == null)
             return;
-
         System.out.print(node.data + " ");
-
         printPreorder(node.left);
-
         printPreorder(node.right);
     }
-
     void printPostorder() {
         printPostorder(root);
     }
-
     void printInorder() {
         printInorder(root);
     }
-
     void printPreorder() {
         printPreorder(root);
     }

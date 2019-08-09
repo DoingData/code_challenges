@@ -11,7 +11,6 @@ public class RemoveDuplicate {
     public int removeDuplicates(int[] nums) {
 
         Set<Integer> set = new HashSet<Integer>();
-
         int len = nums.length;
         int counter = 1;
         if (len != 0) {
@@ -21,13 +20,10 @@ public class RemoveDuplicate {
                     set.add(nums[i]);
                     nums[counter] = nums[i];
                     counter += 1;
-
                 }
-
             }
             return set.size();
         }
         return 0;
-
     }
 }

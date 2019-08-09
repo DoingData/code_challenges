@@ -4,7 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, find the one that is missing from the array.
+ * Given an array containing n distinct numbers taken from 0, 1, 2, ..., n,
+ * find the one that is missing from the array.
  */
 public class MissingNumber {
     public int missingNumber(int[] nums) {
@@ -18,9 +19,7 @@ public class MissingNumber {
             if (!map.containsKey(k)) {
                 return k;
             }
-        }
-
-        return -1;
+        } return -1;
     }
 
     public int missingNumberMaths(int[] nums) {
@@ -29,13 +28,10 @@ public class MissingNumber {
         for (int i = 0; i < n; i++) {
             inputsum = inputsum + nums[i];
         }
-
         int expectedsum = 0;
         for (int i = 0; i <= n; i++) {
             expectedsum = expectedsum + i;
         }
-
         return (expectedsum - inputsum);
     }
-
 }

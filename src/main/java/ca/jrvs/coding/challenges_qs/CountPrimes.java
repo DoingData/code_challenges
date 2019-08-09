@@ -15,10 +15,7 @@ public class CountPrimes {
             }
             if (count == 2) {
                 ret++;
-
             }
-        }
-        return ret;
-
+        }return ret;
     }
 }

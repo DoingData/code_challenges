@@ -34,7 +34,6 @@ public class LinkedList {
 
         for (int i = 0; i < size - 1; i++)
             cur = cur.next;
-
         cur.next = node;
         size++;
     }
@@ -42,12 +41,10 @@ public class LinkedList {
     public void addAtIndex(int index, int val) {
         if (index < 0 || index > size)
             return;
-
         Node node = new Node(val);
         Node pre = head;
         for (int i = 0; i < index; i++)
             pre = pre.next;
-
         node.next = pre.next;
         pre.next = node;
         size++;
@@ -56,11 +53,9 @@ public class LinkedList {
     public void deleteAtIndex(int index) {
         if (index < 0 || index >= size)
             return;
-
         Node pre = head;
         for (int i = 0; i < index; i++)
             pre = pre.next;
-
         pre.next = pre.next.next;
         size--;
     }
@@ -68,21 +63,18 @@ public class LinkedList {
     public String toString() {
 
         StringBuilder res = new StringBuilder();
-
         Node cur = head.next;
         while (cur != null) {
             res.append(cur + "->");
             cur = cur.next;
         }
         res.append("Null");
-
         return res.toString();
     }
 
     public class Node {
         public int data;
         public Node next;
-
         public Node(int val) {
             this.data = val;
             this.next = null;

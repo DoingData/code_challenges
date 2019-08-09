@@ -12,10 +12,7 @@ public class IsNumberInString {
             if ((ch <= 48) || (ch >= 57)) {
                 return false;
             }
-
         }
-
         return true;
     }
-
 }

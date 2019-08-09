@@ -22,7 +22,6 @@ public class RemoveNthFromEnd extends LinkedList {
         for (int i = 0; i < myLinkedlist.size; i++) {
             System.out.println(myLinkedlist.get(i));
         }
-
     }
 
     public Node removeNthFromEnd(Node head, int n) {
@@ -30,13 +29,11 @@ public class RemoveNthFromEnd extends LinkedList {
         Node current = head;
         Node prev = null;
         Node after = null;
-
         int count = 0;
 
         while (current != null) {
             current = current.next;
             count++;
-
         }
         if (count == 1)
             return null;
@@ -46,12 +43,10 @@ public class RemoveNthFromEnd extends LinkedList {
             prev = current;
             current = current.next;
             after = current.next;
-
         }
         if (current.next != null && prev != null)
             prev.next = current.next;
 
         return head;
-
     }
 }

@@ -2,13 +2,11 @@ package ca.jrvs.coding.challenges_qs;
 
 import java.util.HashMap;
 import java.util.Map;
-
 /**
  * Given a linked list, determine if it has a cycle in it.
  *
  * To represent a cycle in the given linked list, we use an integer pos which represents the position (0-indexed) in the linked list where tail connects to. If pos is -1, then there is no cycle in the linked list.
  */
-
 public class isCyclicLinkedList extends LinkedList {
     public boolean hasCycle(Node head) {
         Node curr = head;
@@ -28,8 +26,6 @@ public class isCyclicLinkedList extends LinkedList {
                 return true;
             }
         }
-
         return false;
-
     }
 }

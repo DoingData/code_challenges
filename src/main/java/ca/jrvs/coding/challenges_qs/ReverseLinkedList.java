@@ -24,7 +24,6 @@ public class ReverseLinkedList extends LinkedList {
         for (int i = 0; i < myLinkedlist.size; i++) {
             System.out.println(myLinkedlist.get(i));
         }
-
     }
 
     public Node getLastNode(Node head) {
@@ -36,12 +35,7 @@ public class ReverseLinkedList extends LinkedList {
             currentNode.next = prevNode;
             prevNode = currentNode;
             currentNode = temp;
-
         }
-
         return prevNode;
-
     }
-
 }
-

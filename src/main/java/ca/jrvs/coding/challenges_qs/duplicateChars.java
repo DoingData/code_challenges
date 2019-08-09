@@ -2,7 +2,6 @@ package ca.jrvs.coding.challenges_qs;
 /**
  * Return duplicate characters (in an array) from agiven string
  */
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -23,6 +22,5 @@ public class duplicateChars {
                 System.out.println(entry.getKey() + ":" + entry.getValue());
             }
         }
-
-    }
+    }//end findDuplicate method
 }

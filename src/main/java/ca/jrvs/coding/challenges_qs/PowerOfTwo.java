@@ -7,15 +7,17 @@ package ca.jrvs.coding.challenges_qs;
  * <p>
  * Input: 1
  * Output: true
- * Explanation: 20 = 1
+ * Explanation: 2^0 = 1
  * Example 2:
  * <p>
  * Input: 16
  * Output: true
- * Explanation: 24 = 16
+ * Explanation: 2^4 = 16
  * Example 3:
  * <p>
  * Input: 218
+ * cox 2^7 == 128
+ * and 2^8 == 256
  * Output: false
  */
 public class PowerOfTwo {
@@ -36,7 +38,6 @@ public class PowerOfTwo {
             }
         }
         return true;
-
     }
 
     public boolean isPowerOfTwo1(int n) {
@@ -45,8 +46,6 @@ public class PowerOfTwo {
             return false;
         if (n == 1)
             return true;
-
         return ((n & (n - 1)) == 0);//or  return ((n & (-n))==n)
-
     }
 }
